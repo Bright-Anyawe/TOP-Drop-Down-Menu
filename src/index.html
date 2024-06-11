@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <main>
+
+        <header>
+            <h1 class="headerTextContent">Create your To-Do List</h2>
+        </header>
+
+        <aside>
+            <div id="task">
+                <svg class="addTask" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <title>plus</title>
+                    <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                </svg>
+                <button class="addTask">Add task</button>
+            </div>
+            <div class="inbox-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <title>inbox</title>
+                    <path
+                        d="M19,15H15A3,3 0 0,1 12,18A3,3 0 0,1 9,15H5V5H19M19,3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3Z" />
+                </svg>
+                <p class="inbox">Inbox</p>
+            </div>
+
+            <div id="projects">
+                <h3>My Projects</h3>
+                <p class="projectNames">
+
+                </p>
+            </div>
+        </aside>
+
+        <section id="Container">
+            <!-- <div class="display"> -->
+            <div id="userlist">
+
+            </div>
+
+            <div class="NewProjectStartUp">
+                <div id="addNewProjectEl"> # Add new project </div>
+
+            </div>
+
+            <section id="newProjectsFormContainerEl">
+
+                <div class="inputNewprojectFormName">
+                    <h2 id="newProjectTitle">Add Project</h2>
+
+                    <form action="" class="newProjectNameRequest">
+                        <input type="text" class="inputNewProjectName" placeholder="Enter The Name Of Your Project">
+                        <input type="submit" class="inputNewProjectName submit" value="Save">
+                        <button class="newProjectButtonEl Cancel">Cancel</button>
+                    </form>
+                </div>
+            </section>
+
+
+            <form action="" id="form">
+                <div class="inputs">
+                    <p class='first-inputContainer'><input type="text" class="task-title" placeholder="Add task title">
+                    </p>
+                    <p class="second-inputContainer"><input type="text" class="description"
+                            placeholder="Add description"></p>
+                </div>
+
+                <section class="other-options-on-forms">
+                    <div>
+                        <select name="" id="priority">
+                            <option value="Select Priority">Select Priority</option>
+                            <option value="Urgent">Urgent</option>
+                            <option value="important">Important</option>
+                            <option value="Low priority">Low priority</option>
+                            <option value="Done">Done</option>
+                        </select>
+
+                        <input type="date" id="datePicker" placeholder="dd/mm/yyy" min="1900-03-23" max="2090-18-23">
+                        <!-- <button id="dueDate">Due Date</button> -->
+                    </div>
+
+                    <div class="buttons">
+                        <button class="cancel">Cancel</button>
+                        <button id="submitBtn">Submit Task</button>
+                    </div>
+                </section>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
